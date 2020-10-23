@@ -3,7 +3,7 @@ import { server  } from './app';
 
 //PORT
 //const port = process.env.PORT || 3001;
-const db = process.env.DB || 'mongodb://localhost:27017/tempdb'
+const db = process.env.MONGODB
 //STARTTING APP
 
 const Start = async ()=>{
