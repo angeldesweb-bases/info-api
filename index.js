@@ -9,7 +9,7 @@ const Start = async ()=>{
         //SERVER
         await mongoose.connect(db,{useNewUrlParser:true,useUnifiedTopology:true,useCreateIndex:true,useFindAndModify:false})
         await server.listen({port: process.env.PORT || 4000}).then(({ url }) => {
-            console.log(`Servidor corriendo en ${ url }`);
+            console.log(`Servidor corriendo`);
         })
 
     } catch (error) {
