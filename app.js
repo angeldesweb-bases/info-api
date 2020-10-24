@@ -5,6 +5,7 @@ require('dotenv').config();
 
 //SETTING SCHEMA IN SERVER
 const server = new ApolloServer({
+    cors:true,
     typeDefs,
     resolvers,
     context: async ({ req }) => {
